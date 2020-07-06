@@ -1,0 +1,123 @@
+<!Doctype html>
+<head>
+    <title>Thamil- Assignment 3- Employee Registration Form</title>
+    <style>
+        body{
+
+            background-color: RGB(255,0,0,0.2) ;
+                     
+        }
+
+        .center
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;          
+            width:35%;
+                        
+        }
+     
+        label {
+    display: block;
+    font-family:Georgia;
+}
+
+table{
+    
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#name
+{
+
+        text-align:left;
+}
+    h3
+    {
+        text-align:center; 
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    #button1
+    {
+      float:left;
+      Padding:10px;
+      text-align:left;
+
+    }
+
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+    <div class="container">
+        <img src="1.png" alt="emp" class="center">
+    </div>
+<table>
+            <table cellspacing="20px">
+        <tr>
+            <th id="name"><label for="Name">Name:<sup style="color:red;">*</sup></label></th>
+                <td id="name"><input type="text" id="uname" name="uname" placeholder="Enter your Name" required>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="start">Date Of Birth:</label></th>
+                <td><input type="date" id="start" name="trip-start"  value="2018-07-22" min="1918-01-01" max="2020-12-31"  placeholder="Enter your DOB" required>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="number">Phone Number:</label></th>
+            <td><input type="tel" id="phone" name="phone" pattern="[0,4]{3}-[0-9]{8}" placeholder="123-45-678"><br><br></td>
+        </tr>
+        <tr>
+        <th><label for="address">Enter your Address:<sup style="color:red;">*</sup></label></th>
+        <td><textarea rows="10" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="Refer">How were you referred to us?<sup style="color:red;">*</sup></label></th>
+            <td>
+                <input type="checkbox" id="Refer1" name="Refer1" Value="Walk-In">Walk-In
+                <input type="checkbox" id="Refer2" name="Refer2" Value="Newspaper Ad">Newspaper Ad
+                <input type="checkbox" id="Refer3" name="Refer3" Value="Twitter">Twitter<br/><br/>
+                <input type="checkbox" id="Refer4" name="Refer4" Value="Facebook">Facebook
+                <input type="checkbox" id="Refer5" name="Refer5" Value="Employee">Employee
+                <input type="checkbox" id="Refer6" name="Refer6" Value="Other(please specify)">Other(please specify)
+            </td>  
+        </tr>
+        <tr>
+            <th id="name"><label for="other">Others:</label></th>
+                <td id="name"><input type="text" id="other" name="other" size="50" maxlength="100">
+            </td>
+        </tr>
+            <th id="name"><label for="Upload">Upload Resume:</label></th>
+            <td><input type="file" id="myfile" name="myfile"></td>
+            
+        </tr>
+    </table>
+         <h3><span style="font-size:18pt; color:Blue;"><strong>Job Skills &amp; Training</strong></span></h3>
+          <table cellspacing="20px">
+              <tr>
+                  <th>
+                    <th><label for="skills">Describe your skills:</label></th>
+                    <td><textarea rows="20" cols="30"></textarea></td>
+                  </th>
+              </tr>
+              <tr>
+                <th>
+                  <th><label for="Certicate">Certifications:</label></th>
+                  <td><textarea rows="10" cols="55"></textarea></td>
+                </th>
+            </tr>
+            <tr>
+            <th><input id="button1" type="submit" value="Save My Data"/></th>
+            <td><input id="button1" type="submit" name="sub" id="sub1" value="OK"></td>
+            <th><input id="button1" type="reset" value="Reset Data"/></th>
+            <td><input id="button1" type="reset" name="res" id="res1" value="Refresh/Reset"></td>
+            </tr>  
+        </table>
+</form>
+</table>
+</body>
